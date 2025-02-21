@@ -1,28 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar System</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        #gui-container {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 10;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Observatory & Calendar</title>
+  <link rel="stylesheet" href="landingpage.css">
+  <link rel="stylesheet" href="calender.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
 </head>
 <body>
-    <div id="gui-container"></div>
-    <div><script type="module" src="./script.js"></script></div>
-    <div id="planetInfo" class="planet-info">
-        <div class="planet-info-content">
-            <span class="close-btn" onclick="closeInfo()">&times;</span>
-            <h2 id="planetName"></h2>
-            <p id="planetDetails"></p>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <div>
+            <h1>Space Observatory</h1>
+            <p>Track celestial events and phenomena</p>
+          </div>
         </div>
+        
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search events...">
+            <i class="lucide lucide-search search-icon"></i>
+          </div>
+          
+          <nav>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#calendar">Calendar</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#community">Community</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <h1>Explore the Universe</h1>
+      <p>Track celestial events, natural phenomena, and astronomical wonders across space and time</p>
+      <a href="#calendar" class="cta-button">
+        <i class="lucide lucide-calendar"></i>
+        View Calendar
+      </a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+    <!-- Calendar Section -->
+    <section id="calendar" class="calendar">
+      <div class="filters">
+        <div class="search-container">
+          <i class="lucide lucide-search search-icon"></i>
+          <input type="text" class="search-input" placeholder="Search events...">
+        </div>
+        <div class="filter-controls">
+          <select class="category-select" id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="astronomical">Astronomical</option>
+            <option value="meteor">Meteor Showers</option>
+            <option value="eclipse">Eclipses</option>
+          </select>
+          <button class="filter-button">
+            <i class="lucide lucide-filter"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Left Column -->
+        <div class="main-column">YYYY
+          <!-- Calendar -->
+          <div class="calendar-section">
+            <div class="calendar-header">
+              <h2>March 2024</h2>
+              <div class="calendar-nav">
+                <button class="nav-btn prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button class="nav-btn next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <div class="calendar-grid">
+              <div class="calendar-day-header">Sun</div>
+              <div class="calendar-day-header">Mon</div>
+              <div class="calendar-day-header">Tue</div>
+              <div class="calendar-day-header">Wed</div>
+              <div class="calendar-day-header">Thu</div>
+              <div class="calendar-day-header">Fri</div>
+              <div class="calendar-day-header">Sat</div>
+              
+              <!-- Calendar Days -->
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day">1</div>
+              <div class="calendar-day">2</div>
+              <div class="calendar-day">3</div>
+              <div class="calendar-day">4</div>
+              <div class="calendar-day">5</div>
+              <div class="calendar-day has-event">6
+                <span class="event-dot"></span>
+              </div>
+              <div class="calendar-day">7</div>
+              <div class="calendar-day">8</div>
+              <div class="calendar-day has-event">9
+                <span class="event-dot"></span>
+              </div>
+              <div class="calendar-day">10</div>
+              <!-- Additional days can be added dynamically via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Events Section -->
+          <div class="events-section">
+            <div class="events-header">
+              <h2>Events & Natural Phenomena</h2>
+              <button class="view-all">View All</button>
+            </div>
+            
+            <div class="events-grid">
+              <!-- Event Card Template -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="star-icon">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Meteor Shower</h3>
+                      <p class="event-date">March 15, 2024 • 6 hours</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">Annual Geminids meteor shower peaks tonight. Best viewing conditions after midnight.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Find a dark location away from city lights. Allow 30 minutes for your eyes to adjust to darkness.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Additional event cards can be added here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="selected-events">
+            <h3>Selected Date Events</h3>
+            <p class="no-events">Select a date to view events</p>
+          </div>
+
+          <div class="quick-tips">
+            <h3>Event Tracking Guide</h3>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <p>Track astronomical events and plan your observations</p>
+              </li>
+              <!-- ...existing quick tips... -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- ...existing footer code... -->
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hero = document.querySelector('.hero');
+      const background = document.querySelector('.hero-background');
+      const content = document.querySelector('.hero-content');
+      
+      // Parallax on scroll
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        background.style.transform = `translateY(${scrolled * 0.5}px)`;
+        content.style.transform = `translateY(${scrolled * 0.3}px)`;
+      });
+
+      // Mouse move parallax
+      hero.addEventListener('mousemove', (e) => {
+        const { clientX, clientY } = e;
+        const x = (clientX - window.innerWidth / 2) * 0.01;
+        const y = (clientY - window.innerHeight / 2) * 0.01;
+
+        background.style.transform = `translate3d(${x * 2}px, ${y * 2}px, 0) scale(1.1)`;
+        content.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      });
+
+      // Reset transforms when mouse leaves
+      hero.addEventListener('mouseleave', () => {
+        background.style.transform = 'translate3d(0, 0, 0) scale(1)';
+        content.style.transform = 'translate3d(0, 0, 0)';
+      });
+    });
+  </script>
 </body>
 </html>
