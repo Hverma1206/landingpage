@@ -195,6 +195,7 @@ nav a:hover {
   font-weight: 500;
 }
 
+/* Enhanced calendar day styles */
 .calendar-day {
   aspect-ratio: 1;
   padding: 0.5rem;
@@ -202,7 +203,18 @@ nav a:hover {
   border-radius: 0.5rem;
   position: relative;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.3s ease;
+}
+
+.calendar-day.today {
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid var(--color-purple);
+}
+
+.calendar-day.selected {
+  background: rgba(124, 58, 237, 0.2);
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .calendar-day:hover {
@@ -219,13 +231,23 @@ nav a:hover {
 
 .event-dot {
   position: absolute;
-  bottom: 0.25rem;
+  bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 0.25rem;
-  height: 0.25rem;
-  background: var(--color-purple);
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
+  background: var(--color-purple);
+}
+
+.event-dot.multiple::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-purple);
 }
 
 /* Events Section */
@@ -258,6 +280,7 @@ nav a:hover {
   gap: 1rem;
 }
 
+/* Enhanced event card styles */
 .event-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(16px);
@@ -266,11 +289,13 @@ nav a:hover {
   padding: 1.5rem;
   display: flex;
   gap: 1rem;
-  transition: border-color 0.3s;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 .event-card:hover {
   border-color: rgba(167, 139, 250, 0.5);
+  transform: translateY(-2px);
 }
 
 .event-icon {
@@ -315,16 +340,31 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+.event-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
 .event-tips {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 0.5rem;
   padding: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
 }
 
 .event-tips h4 {
   color: var(--color-purple);
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
+}
+
+.event-tips h5 {
+  color: var(--color-purple);
+  margin-bottom: 0.25rem;
 }
 
 .event-tips p {
