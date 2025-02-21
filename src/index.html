@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,29 +12,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="2" y1="12" x2="22" y2="12"/>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
           </svg>
           <div>
             <h1>Space Observatory</h1>
             <p>Track celestial events and phenomena</p>
           </div>
         </div>
-        
+
         <div class="header-actions">
           <div class="search-box">
             <input type="text" id="searchInput" placeholder="Search events...">
             <i class="lucide lucide-search search-icon"></i>
           </div>
-          
+
           <nav>
             <ul>
               <li><a href="#hero">Home</a></li>
@@ -91,18 +94,20 @@
               <h2>March 2024</h2>
               <div class="calendar-nav">
                 <button class="nav-btn prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="15 18 9 12 15 6"></polyline>
                   </svg>
                 </button>
                 <button class="nav-btn next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </button>
               </div>
             </div>
-            
+
             <div class="calendar-grid">
               <div class="calendar-day-header">Sun</div>
               <div class="calendar-day-header">Mon</div>
@@ -111,7 +116,7 @@
               <div class="calendar-day-header">Thu</div>
               <div class="calendar-day-header">Fri</div>
               <div class="calendar-day-header">Sat</div>
-              
+
               <!-- Calendar Days -->
               <div class="calendar-day empty"></div>
               <div class="calendar-day empty"></div>
@@ -141,13 +146,17 @@
               <h2>Events & Natural Phenomena</h2>
               <button class="view-all">View All</button>
             </div>
-            
+
             <div class="events-grid">
-              <!-- Event Card Template -->
+              <!-- Event Card 1 -->
               <div class="event-card">
                 <div class="event-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="star-icon">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
                   </svg>
                 </div>
                 <div class="event-details">
@@ -158,39 +167,567 @@
                     </div>
                     <span class="event-location">Visible worldwide</span>
                   </div>
-                  <p class="event-description">Annual Geminids meteor shower peaks tonight. Best viewing conditions after midnight.</p>
+                  <p class="event-description">Annual Geminids meteor shower peaks tonight. Best viewing conditions
+                    after midnight.</p>
                   <div class="event-tips">
                     <h4>Viewing Tips</h4>
-                    <p>Find a dark location away from city lights. Allow 30 minutes for your eyes to adjust to darkness.</p>
+                    <p>Find a dark location away from city lights. Allow 30 minutes for your eyes to adjust to darkness.
+                    </p>
                   </div>
                 </div>
               </div>
-              <!-- Additional event cards can be added here -->
+
+              <!-- Event Card 2 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Lunar Eclipse</h3>
+                      <p class="event-date">April 5, 2024 • 4 hours</p>
+                    </div>
+                    <span class="event-location">Visible in North America</span>
+                  </div>
+                  <p class="event-description">A total lunar eclipse will occur. The Moon will be fully in Earth's
+                    shadow.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>No special equipment required, just find a clear view of the night sky.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 3 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Solar Flare</h3>
+                      <p class="event-date">May 10, 2024 • 2 hours</p>
+                    </div>
+                    <span class="event-location">Visible in higher latitudes</span>
+                  </div>
+                  <p class="event-description">A major solar flare expected to cause auroras in the Northern Hemisphere.
+                  </p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Stay tuned to weather and space news for the best viewing locations.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 4 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Comet Visibility</h3>
+                      <p class="event-date">June 2, 2024 • 1 hour</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">A bright comet will be passing by Earth, making it visible to the naked
+                    eye.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Best viewed with a telescope or binoculars for a closer look.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 5 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Annular Solar Eclipse</h3>
+                      <p class="event-date">July 10, 2024 • 3 hours</p>
+                    </div>
+                    <span class="event-location">Visible in parts of Africa and Asia</span>
+                  </div>
+                  <p class="event-description">The Sun will appear as a ring of fire due to the moon covering the center
+                    of the Sun.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Use proper eclipse glasses to avoid damaging your eyes.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 6 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Perseid Meteor Shower</h3>
+                      <p class="event-date">August 13, 2024 • 6 hours</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">The Perseid meteor shower will reach its peak with bright and frequent
+                    meteors.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Best viewed from a dark location away from city lights.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 7 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Saturn Opposition</h3>
+                      <p class="event-date">September 6, 2024 • 5 hours</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">Saturn will be closest to Earth, offering the best viewing of its rings
+                    and moons.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Use a telescope to get the best view of Saturn's rings and moons.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 8 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Supermoon</h3>
+                      <p class="event-date">October 19, 2024 • 1 night</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">A Supermoon will occur, making the Moon appear larger and brighter in the
+                    sky.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Best viewed from a high location to avoid obstructions.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 9 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Gemini Meteor Shower</h3>
+                      <p class="event-date">December 14, 2024 • 8 hours</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">The Gemini meteor shower reaches its peak with bright and fast-moving
+                    meteors.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Find a dark location and be prepared for an exciting meteor display.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 10 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Winter Solstice</h3>
+                      <p class="event-date">December 21, 2024 • All day</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">The Winter Solstice marks the shortest day and longest night of the year.
+                  </p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Celebrate by observing the celestial change, perfect for stargazing on the longest night.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="events-grid">
+              <!-- Event Card 11 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Annular Solar Eclipse</h3>
+                      <p class="event-date">January 26, 2025 • 3 hours</p>
+                    </div>
+                    <span class="event-location">Visible in parts of Asia and Australia</span>
+                  </div>
+                  <p class="event-description">An annular solar eclipse, where the moon will be centered within the sun,
+                    leaving a ring of light.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Wear certified eclipse glasses to safely view the event.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 12 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Perseid Meteor Shower</h3>
+                      <p class="event-date">August 12, 2025 • 7 hours</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">The Perseid meteor shower will light up the sky with bright, fast
+                    meteors.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Find a dark location, and bring a reclining chair to watch the sky comfortably.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 13 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Partial Lunar Eclipse</h3>
+                      <p class="event-date">November 8, 2025 • 5 hours</p>
+                    </div>
+                    <span class="event-location">Visible in parts of North America</span>
+                  </div>
+                  <p class="event-description">A partial lunar eclipse where only part of the moon passes through the
+                    Earth's shadow.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>No special equipment needed, but a pair of binoculars will enhance the view.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 14 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Great Conjunction of Jupiter and Saturn</h3>
+                      <p class="event-date">December 21, 2025 • 1 hour</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">Jupiter and Saturn will appear incredibly close together, creating a
+                    spectacular sight.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>A telescope will help get the most out of the view of both planets.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 15 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Stargazing in the Sahara</h3>
+                      <p class="event-date">January 15, 2026 • All day</p>
+                    </div>
+                    <span class="event-location">Sahara Desert, Africa</span>
+                  </div>
+                  <p class="event-description">An exclusive event for stargazing in one of the clearest skies on Earth,
+                    away from light pollution.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Prepare for cold desert nights and bring equipment for optimal viewing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 16 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Uranus Opposition</h3>
+                      <p class="event-date">February 10, 2026 • 6 hours</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">Uranus will be at its closest point to Earth, offering a unique chance to
+                    view its color and features.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Use a telescope to see Uranus clearly and view its faint rings.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 17 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Black Hole Discovery</h3>
+                      <p class="event-date">April 30, 2026 • 3 hours</p>
+                    </div>
+                    <span class="event-location">Visible in deep space telescopes</span>
+                  </div>
+                  <p class="event-description">The discovery of a new black hole, expected to be one of the closest
+                    known to Earth.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Monitor space science news for updates on observational opportunities.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 18 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Solar Flare Peak</h3>
+                      <p class="event-date">July 23, 2026 • 2 hours</p>
+                    </div>
+                    <span class="event-location">Visible in high latitudes</span>
+                  </div>
+                  <p class="event-description">A massive solar flare will peak, creating stunning auroras visible in
+                    regions closer to the poles.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Best viewed from the northern and southern regions with clear skies.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Event Card 19 -->
+              <div class="event-card">
+                <div class="event-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="star-icon">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="event-details">
+                  <div class="event-header">
+                    <div>
+                      <h3>Halley's Comet Visibility</h3>
+                      <p class="event-date">August 1, 2026 • 5 hours</p>
+                    </div>
+                    <span class="event-location">Visible worldwide</span>
+                  </div>
+                  <p class="event-description">Halley's Comet will be visible again, a rare event that occurs only once
+                    every 76 years.</p>
+                  <div class="event-tips">
+                    <h4>Viewing Tips</h4>
+                    <p>Use a telescope for a closer look at the comet's tail.</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="event-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="star-icon">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <div class="event-details">
+                <div class="event-header">
+                  <div>
+                    <h3>Venus Transits the Sun</h3>
+                    <p class="event-date">November 11, 2026 • 6 hours</p>
+                  </div>
+                  <span class="event-location">Visible in parts of the world</span>
+                </div>
+                <p class="event-description">Venus
+
+
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+              <div class="selected-events">
+                <h3>Selected Date Events</h3>
+                <p class="no-events">Select a date to view events</p>
+              </div>
+
+              <div class="quick-tips">
+                <h3>Event Tracking Guide</h3>
+                <ul>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <p>Track astronomical events and plan your observations</p>
+                  </li>
+                  <!-- ...existing quick tips... -->
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <div class="selected-events">
-            <h3>Selected Date Events</h3>
-            <p class="no-events">Select a date to view events</p>
-          </div>
-
-          <div class="quick-tips">
-            <h3>Event Tracking Guide</h3>
-            <ul>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-                <p>Track astronomical events and plan your observations</p>
-              </li>
-              <!-- ...existing quick tips... -->
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
   </main>
 
@@ -206,7 +743,7 @@
       const hero = document.querySelector('.hero');
       const background = document.querySelector('.hero-background');
       const content = document.querySelector('.hero-content');
-      
+
       // Parallax on scroll
       window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
@@ -232,4 +769,5 @@
     });
   </script>
 </body>
+
 </html>
