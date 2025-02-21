@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Astronomy Calendar</title>
+    <link rel="stylesheet" href="calender.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calendar-icon">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <div>
+                        <h1>Space Astronomy Calendar</h1>
+                        <p>Track celestial events and plan your stargazing</p>
+                    </div>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search events...">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#calendar">Calendar</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#community">Community</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Track Natural Events & Celestial Phenomena</h2>
+            <p>Real-time updates on astronomical events and natural phenomena worldwide. From meteor showers to natural events, stay informed about our dynamic planet.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <div class="grid">
+            <!-- Left Column -->
+            <div class="main-column">
+                <!-- Calendar -->
+                <div class="calendar-section">
+                    <div class="calendar-header">
+                        <h2>March 2024</h2>
+                        <div class="calendar-nav">
+                            <button class="nav-btn prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="nav-btn next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-day-header">Sun</div>
+                        <div class="calendar-day-header">Mon</div>
+                        <div class="calendar-day-header">Tue</div>
+                        <div class="calendar-day-header">Wed</div>
+                        <div class="calendar-day-header">Thu</div>
+                        <div class="calendar-day-header">Fri</div>
+                        <div class="calendar-day-header">Sat</div>
+                        
+                        <!-- Calendar Days -->
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day has-event">6
+                            <span class="event-dot"></span>
+                        </div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day has-event">9
+                            <span class="event-dot"></span>
+                        </div>
+                        <div class="calendar-day">10</div>
+                        <!-- ... more days ... -->
+                    </div>
+                </div>
+
+                <!-- Events List -->
+                <div class="events-section">
+                    <div class="events-header">
+                        <h2>Events & Natural Phenomena</h2>
+                        <button class="view-all">View All</button>
+                    </div>
+                    
+                    <div class="events-list">
+                        <!-- Event Card -->
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="star-icon">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="event-details">
+                                <div class="event-header">
+                                    <div>
+                                        <h3>Meteor Shower</h3>
+                                        <p class="event-date">March 15, 2024 • 6 hours</p>
+                                    </div>
+                                    <span class="event-location">Visible worldwide</span>
+                                </div>
+                                <p class="event-description">Annual Geminids meteor shower peaks tonight. Best viewing conditions after midnight.</p>
+                                <div class="event-tips">
+                                    <h4>Viewing Tips</h4>
+                                    <p>Find a dark location away from city lights. Allow 30 minutes for your eyes to adjust to darkness.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More event cards... -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="selected-events">
+                    <h3>Selected Date Events</h3>
+                    <p class="no-events">Select a date to view events</p>
+                </div>
+
+                <div class="quick-tips">
+                    <h3>Event Tracking Guide</h3>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                            <p>Track astronomical events and plan your observations</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <p>Monitor natural phenomena and their locations</p>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            <p>Stay informed about environmental events worldwide</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Dedicated to making astronomy accessible and exciting for everyone. Track celestial events and explore the wonders of the universe.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#calendar">Calendar</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#forum">Forum</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#discord">Discord</a></li>
+                        <li><a href="#social">Social Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates about upcoming celestial events.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Space Astronomy Calendar. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
